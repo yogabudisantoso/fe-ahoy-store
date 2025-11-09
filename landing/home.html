@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahoy Store — Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* keep body reset consistent */
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body class="m-0">
+    <!-- Navbar (components/navbar.html body header) -->
+    <header class="w-full bg-white">
+      <div
+        class="max-w-screen-xl w-full mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <div class="flex items-center">
+          <a href="/" aria-label="Ahoy Store home" class="inline-block">
+            <img
+              src="../img/logo-ahoy.png"
+              alt="Ahoy Store logo"
+              class="w-16 h-16 object-cover"
+            />
+          </a>
+        </div>
+
+        <nav aria-label="Main navigation">
+          <ul class="flex items-center gap-8 text-sm">
+            <li><a href="#" class="text-black" aria-current="page">Home</a></li>
+            <li><a href="#" class="text-black">Beli</a></li>
+            <li><a href="#" class="text-black">Artikel</a></li>
+            <li><a href="#" class="text-black">Cek Pesanan</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero section (landing/hero_section.html body) -->
+    <div class="w-full bg-white">
+      <section
+        class="max-w-screen-xl w-full mx-auto flex flex-col md:flex-row items-start md:items-center gap-12 px-6 py-16"
+      >
+        <div class="flex-1">
+          <h1
+            class="text-4xl md:text-[56px] font-bold leading-tight text-left text-black"
+          >
+            Unlock gaming with our
+            <span class="text-[#0e62a7]">Robux marketplace!</span>
+            <span class="block md:inline">Buy and sell securely.</span>
+          </h1>
+          <p class="mt-6 text-lg text-[#212121] max-w-2xl">
+            Unlock the world of gaming with our secure Robux marketplace! Here,
+            you can easily buy and sell Robux, ensuring safe transactions and a
+            seamless experience. Join our community of gamers and elevate your
+            gaming experience today!
+          </p>
+        </div>
+        <div class="flex-1 w-full max-w-lg">
+          <img
+            src="../img/hero-banner.png"
+            alt="Unlock gaming with our Robux marketplace"
+            class="w-full h-auto object-cover rounded"
+          />
+        </div>
+      </section>
+    </div>
+
+    <!-- CTA (landing/cta.html body) -->
+    <div class="w-full bg-white">
+      <section
+        aria-label="Call to action"
+        class="max-w-screen-xl w-full mx-auto px-6 py-16"
+      >
+        <div
+          class="w-full bg-[#f5f7fa] rounded-2xl p-6 md:p-12 flex flex-col items-center"
+        >
+          <div class="max-w-3xl text-center">
+            <h2 class="text-3xl md:text-5xl font-bold">
+              <span class="text-[#0e65a7] block md:inline"
+                >Boost Your Engagement</span
+              >
+              <span class="block md:inline text-black"
+                >with Our Exclusive Offers!</span
+              >
+            </h2>
+            <p class="mt-6 text-base md:text-lg text-[#212121]">
+              Elevate your interaction with our special deals! Discover unique
+              offers designed to captivate your audience and enhance their
+              experience. Don't miss out on these exclusive opportunities to
+              engage like never before!
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Articles (landing/artikel.html body) -->
+    <div class="w-full bg-white">
+      <section
+        class="max-w-screen-xl w-full mx-auto px-6 py-16"
+        aria-label="Blog and articles"
+      >
+        <header class="mb-12 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#1064a8]">
+            Blog and Articles
+          </h2>
+        </header>
+
+        <div class="overflow-x-auto -mx-6 px-6 lg:mx-0 lg:px-0">
+          <div
+            class="flex flex-nowrap gap-6 sm:gap-8 items-stretch snap-x snap-mandatory scroll-pl-6"
+          >
+            <article
+              class="flex-none w-80 md:w-96 bg-white rounded-lg overflow-hidden shadow-sm snap-start"
+            >
+              <img
+                src="../img/artikel-image.png"
+                alt="Artikel thumbnail"
+                class="w-full h-44 md:h-48 object-cover"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">
+                  Ultimate Guide : How To Play Survive 99 Nights in the Forest !
+                </h3>
+                <time class="text-sm text-gray-600">10 July 2025</time>
+              </div>
+            </article>
+
+            <article
+              class="flex-none w-80 md:w-96 bg-white rounded-lg overflow-hidden shadow-sm snap-start"
+            >
+              <img
+                src="../img/artikel-image.png"
+                alt="Artikel thumbnail"
+                class="w-full h-44 md:h-48 object-cover"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">
+                  Ultimate Guide : How To Play Survive 99 Nights in the Forest !
+                </h3>
+                <time class="text-sm text-gray-600">10 July 2025</time>
+              </div>
+            </article>
+
+            <article
+              class="flex-none w-80 md:w-96 bg-white rounded-lg overflow-hidden shadow-sm snap-start"
+            >
+              <img
+                src="../img/artikel-image.png"
+                alt="Artikel thumbnail"
+                class="w-full h-44 md:h-48 object-cover"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">
+                  Ultimate Guide : How To Play Survive 99 Nights in the Forest !
+                </h3>
+                <time class="text-sm text-gray-600">10 July 2025</time>
+              </div>
+            </article>
+
+            <article
+              class="flex-none w-80 md:w-96 bg-white rounded-lg overflow-hidden shadow-sm snap-start"
+            >
+              <img
+                src="../img/artikel-image.png"
+                alt="Artikel thumbnail"
+                class="w-full h-44 md:h-48 object-cover"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">
+                  Ultimate Guide : How To Play Survive 99 Nights in the Forest !
+                </h3>
+                <time class="text-sm text-gray-600">10 July 2025</time>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact (landing/contact.html body) -->
+    <div class="w-full bg-white">
+      <section class="max-w-screen-xl w-full mx-auto px-6 py-16">
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start gap-10"
+        >
+          <div class="flex-1 md:flex-[0_0_45%]">
+            <h1 class="text-4xl md:text-5xl font-bold text-black">
+              Contact us via Whatsapp
+            </h1>
+            <p class="mt-8">
+              <a
+                href="https://wa.me/?text=Halo"
+                class="inline-block bg-[#0f64a6] text-white px-6 py-3 rounded text-sm font-medium"
+                >Klik untuk menghubungi</a
+              >
+            </p>
+          </div>
+
+          <div class="flex-1 w-full md:flex-[0_0_50%]">
+            <div
+              class="w-full h-64 md:h-[300px] rounded overflow-hidden md:max-w-xl"
+            >
+              <iframe
+                title="Cibubur Futsal Court map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15861.108279224598!2d106.85596141558054!3d-6.358172072907381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed84e4f5aa5b%3A0x4acfddf7c89b4ecd!2sCibubur%20Futsal%20Court%20(CFC)!5e0!3m2!1sid!2sid!4v1762704153114!5m2!1sid!2sid"
+                class="w-full h-full border-0"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer (components/footer.html footer) -->
+    <footer class="w-full bg-white">
+      <div
+        class="max-w-screen-xl w-full mx-auto px-6 py-6 flex items-center justify-center"
+        style="filter: drop-shadow(0px -1px 0px #e4ebf3)"
+      >
+        <p class="text-sm text-center text-[#333]">
+          Copyright © 2022 Company name
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

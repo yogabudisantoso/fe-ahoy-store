@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* ensure full-width body and avoid horizontal scroll from fixed-width children */
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body class="m-0">
+    <!-- Full-width navbar container: fits 100% of the viewport width -->
+    <header class="w-full bg-white">
+      <div
+        class="max-w-screen-xl w-full mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- Logo / brand (link to homepage for semantics & accessibility) -->
+        <div class="flex items-center">
+          <a href="/" aria-label="Ahoy Store home" class="inline-block">
+            <img
+              src="../img/logo-ahoy.png"
+              alt="Ahoy Store logo"
+              class="w-16 h-16 object-cover"
+            />
+          </a>
+        </div>
+
+        <!-- Primary navigation (semantic + accessible) -->
+        <nav aria-label="Main navigation">
+          <ul class="flex items-center gap-8 text-sm">
+            <li><a href="#" class="text-black" aria-current="page">Home</a></li>
+            <li><a href="#" class="text-black">Beli</a></li>
+            <li><a href="#" class="text-black">Artikel</a></li>
+            <li><a href="#" class="text-black">Cek Pesanan</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
