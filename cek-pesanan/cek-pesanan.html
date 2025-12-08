@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Pesanan — Ahoy Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-0">
+    <!-- Navbar (inlined from components/navbar.html) -->
+    <header class="w-full bg-white">
+      <div
+        class="max-w-screen-xl w-full mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <div class="flex items-center">
+          <a
+            href="../home.html"
+            aria-label="Ahoy Store home"
+            class="inline-block"
+          >
+            <img
+              src="../img/logo-ahoy.png"
+              alt="Ahoy Store logo"
+              class="w-16 h-16 object-cover"
+            />
+          </a>
+        </div>
+
+        <nav aria-label="Main navigation">
+          <ul class="flex items-center gap-8 text-sm">
+            <li><a href="../home.html" class="text-black">Home</a></li>
+            <li>
+              <a href="../payment/payment.html" class="text-black">Beli</a>
+            </li>
+            <li>
+              <a href="../home.html#articles" class="text-black">Artikel</a>
+            </li>
+            <li>
+              <a href="cek-pesanan.html" class="text-black" aria-current="page"
+                >Cek Pesanan</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="w-full bg-white">
+      <div
+        class="max-w-screen-xl w-full mx-auto flex flex-col justify-start items-center gap-16 px-6 py-16"
+      >
+        <div class="w-full flex flex-col items-center gap-10">
+          <div
+            class="flex flex-col justify-start items-center self-stretch gap-4"
+          >
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-black">
+              Cek Pesanan
+            </h1>
+            <p class="text-base md:text-lg text-center text-black">
+              Cek pesanan kamu dengan email ataupun username lalu klik cek
+            </p>
+          </div>
+
+          <div class="w-full flex flex-col items-center gap-6">
+            <div class="w-full max-w-xl">
+              <form class="flex flex-col sm:flex-row items-center gap-4">
+                <label for="q" class="sr-only">Username atau Email</label>
+                <input
+                  id="q"
+                  name="q"
+                  type="text"
+                  placeholder="Masukan Username atau Email"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-md text-sm"
+                />
+                <button
+                  type="submit"
+                  class="px-6 py-3 bg-[#0f63a8] text-white rounded-md text-sm whitespace-nowrap"
+                >
+                  Cek Pesanan
+                </button>
+              </form>
+            </div>
+
+            <img
+              src="../img/empty.png"
+              alt="illustration"
+              class="w-64 h-52 object-cover"
+            />
+
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-black">
+              Tidak ada data invoice
+            </h2>
+
+            <p class="w-full max-w-lg text-sm text-center text-black">
+              Username atau email yang dimasukkan belum memiliki riwayat
+              transaksi, harap masukkan email &amp; username dengan tepat
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer (inlined from components/footer.html) -->
+    <footer class="w-full bg-white">
+      <div
+        class="max-w-screen-xl w-full mx-auto px-6 py-6 flex items-center justify-center"
+        style="filter: drop-shadow(0px -1px 0px #e4ebf3)"
+      >
+        <p class="text-sm text-center text-[#333]">
+          Copyright © 2022 Company name
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

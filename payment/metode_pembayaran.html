@@ -1,0 +1,55 @@
+<div class="p-6 w-full max-w-md mx-auto">
+  <div
+    class="bg-white rounded shadow-md"
+    style="box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12)"
+  >
+    <div class="px-6 py-4 border-b">
+      <h2 class="text-lg font-semibold text-gray-900">
+        Pilih Metode Pembayaran
+      </h2>
+    </div>
+
+    <div class="p-6 space-y-4">
+      <button
+        type="button"
+        class="w-full flex items-start gap-4 p-3 border rounded hover:bg-gray-50 text-left"
+        onclick="/* optional select handler */"
+      >
+        <img src="../img/qris.png" alt="QRIS" class="w-16 h-16 object-cover" />
+        <div class="flex-1">
+          <div class="font-semibold">QRIS</div>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </button>
+
+      <button
+        type="button"
+        class="w-full flex items-start gap-4 p-3 border rounded hover:bg-gray-50 text-left"
+        onclick="/* optional select handler */"
+      >
+        <img
+          src="../img/dana.png"
+          alt="DANA"
+          class="w-16 h-12 object-contain"
+        />
+        <div class="flex-1">
+          <div class="font-semibold">DANA</div>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </button>
+    </div>
+
+    <div class="px-6 pb-6">
+      <button
+        onclick="document.getElementById('modal-close')?.click()"
+        class="w-full bg-[#0f63a8] text-white py-3 rounded"
+      >
+        Kembali
+      </button>
+    </div>
+  </div>
+</div>

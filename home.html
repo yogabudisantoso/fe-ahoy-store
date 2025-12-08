@@ -14,11 +14,12 @@
     </style>
   </head>
   <body class="m-0">
-    <!-- Navbar (components/navbar.html body header) -->
+    <!-- Navbar (from components/navbar.html) -->
     <header class="w-full bg-white">
       <div
         class="max-w-screen-xl w-full mx-auto flex items-center justify-between px-6 py-4"
       >
+        <!-- Logo / brand -->
         <div class="flex items-center">
           <a href="/" aria-label="Ahoy Store home" class="inline-block">
             <img
@@ -29,12 +30,17 @@
           </a>
         </div>
 
+        <!-- Primary navigation -->
         <nav aria-label="Main navigation">
           <ul class="flex items-center gap-8 text-sm">
             <li><a href="#" class="text-black" aria-current="page">Home</a></li>
-            <li><a href="#" class="text-black">Beli</a></li>
-            <li><a href="#" class="text-black">Artikel</a></li>
-            <li><a href="#" class="text-black">Cek Pesanan</a></li>
+            <li><a href="payment/payment.html" class="text-black">Beli</a></li>
+            <li><a href="#articles" class="text-black">Artikel</a></li>
+            <li>
+              <a href="cek-pesanan/cek-pesanan.html" class="text-black"
+                >Cek Pesanan</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -102,6 +108,7 @@
     <!-- Articles (landing/artikel.html body) -->
     <div class="w-full bg-white">
       <section
+        id="articles"
         class="max-w-screen-xl w-full mx-auto px-6 py-16"
         aria-label="Blog and articles"
       >
@@ -226,7 +233,7 @@
       </section>
     </div>
 
-    <!-- Footer (components/footer.html footer) -->
+    <!-- Footer (from components/footer.html) -->
     <footer class="w-full bg-white">
       <div
         class="max-w-screen-xl w-full mx-auto px-6 py-6 flex items-center justify-center"
